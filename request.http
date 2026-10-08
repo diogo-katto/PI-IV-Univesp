@@ -1,0 +1,8 @@
+### Criar leitura
+POST https://localhost:5001/api/readings
+Content-Type: application/json
+
+{
+  "temperature": 25.5,
+  "humidity": 63.2
+}
