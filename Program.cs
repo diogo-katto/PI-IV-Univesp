@@ -12,6 +12,7 @@ builder.Services.AddDbContext<AppDBContext>(options =>
 );
 
 builder.Services.AddScoped<IReadingService, ReadingService>();
+builder.Services.AddScoped<IReadingAnalysisService, ReadingAnalysisService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

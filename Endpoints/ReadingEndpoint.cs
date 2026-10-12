@@ -16,6 +16,11 @@ namespace IoTMonitor.Endpoints
                 var reading = await service.CreateReadingAsync(request);
                 return Results.Ok(reading);
             });
+             app.MapGet("/api/readings/latest", async (IReadingService service) =>
+            {
+                var reading = await service.GetLatestReadingAsync();
+                return Results.Ok(reading);
+            });
             }  
         }
 }
